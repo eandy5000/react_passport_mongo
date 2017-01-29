@@ -9,7 +9,7 @@ const requireSignin = passport.authenticate('local', {session: false})
 module.exports = function(app) {
 
 app.get('/',requireAuth ,(req, res) => {
-    res.send({ message: 'You have now been cleared'})
+    res.send({ message: 'You have TOP SECRET clearance'})
 })
 
 app.post('/signin', requireSignin ,Authenticaiton.signin)
